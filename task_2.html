@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 15px;
+        }
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center">Conference Registration Form</h1>
+
+    <table align="center" style="width:80%">
+        <form>
+        <br>
+            <tr>
+                <td>Full Name: </td>
+                <td><input type="text" placeholder="Enter your full name" size="50"> </td>
+            </tr>
+            <tr>
+                <td>Email Address: </td>
+                <td><input type="text" placeholder="Enter your email address" size="50"> </td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td><input type="number" placeholder="Age" min="18" max="99"> </td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td><input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female</td>   
+            </tr>
+            <tr>
+                <td>Country of Residence:</td>
+                    <td>
+                        <select name="Residence" id="Residence">
+                         <option>Choose</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </td>
+                </select>
+            </tr>
+            <tr>
+                <td>Areas of Interest: </td>
+                <td><input type="checkbox" name="Subjects">Software Development
+                    <input type="checkbox" name="Subjects">Data Science
+                    <input type="checkbox" name="Subjects">Cybersecurity
+                    <input type="checkbox" name="Subjects">Artificial Intelligence
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level: </td>
+                <td><input type="radio" name="level">Beginner
+                    <input type="radio" name="level">Intermediate
+                    <input type="radio" name="level">Advanced</td>   
+            </tr>
+            <tr>
+                <td>Comments or Questions: </td>
+                <td><textarea  placeholder="Any Comments or Questions"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="register" value="register">Register</button>
+                    <button type="reset" value="reset">Reset</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
